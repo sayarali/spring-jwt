@@ -21,6 +21,7 @@ import java.util.List;
 @Table(name = "users")
 public class User implements UserDetails{
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String name;
